@@ -1,9 +1,7 @@
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
 
-        Employee [] employeeBook = new Employee[10];
+        Employee[] employeeBook = new Employee[10];
         Employee employee1 = new Employee("Иванов Иван Иванович", 1, 100_000);
         employeeBook[0] = employee1;
         Employee employee2 = new Employee("Петров Петр Петрович", 2, 120_000);

@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Employee {
     private String fullName;
     private int unitNumber;
@@ -57,12 +55,13 @@ public class Employee {
         return "\n" + fullName + ", отдел: " + unitNumber + ", зарплата: " + salary + " рублей";
     }
 
-    public static void printToString(Employee [] employeeBook) {
+    public static void printToString(Employee[] employeeBook) {
         for (int i = 0; i < counter - 1; i++) {
             System.out.println(employeeBook[i]);
         }
     }
-    public static float findCostWages(Employee[]employeeBook) {
+
+    public static float findCostWages(Employee[] employeeBook) {
         float sum = 0;
         for (int i = 0; i < counter - 1; i++) {
 
@@ -71,6 +70,7 @@ public class Employee {
         return sum;
 
     }
+
     public static String findMinWageEmployee(Employee[] employeeBook) {
         double minWage = 200_000;
         String fullName = "";
@@ -83,6 +83,7 @@ public class Employee {
         }
         return fullName;
     }
+
     public static String findMaxWageEmployee(Employee[] employeeBook) {
         double maxWage = 0;
         String fullName = "";
@@ -106,6 +107,7 @@ public class Employee {
             System.out.println(employeeBook[i].getFullName());
         }
     }
+
     public static void printEmployeesList(Employee[] employeeBook) {
         System.out.println("Список сотрудников:");
         System.out.println("--------------------------------------------------------------------");
