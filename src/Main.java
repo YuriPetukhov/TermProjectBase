@@ -13,8 +13,7 @@ public class Main {
         Employee employee5 = new Employee("Маратов Марат Маратович", 5, 115_000);
         employeeBook[4] = employee5;
 
-        System.out.println("Задачи базовой сложности");
-        System.out.println();
+        System.out.println("Задачи базовой сложности\n");
         System.out.println("Для проверки. Получить список всех сотрудников со всеми имеющимися по ним данными");
         Employee.printEmployeesList(employeeBook);
         System.out.println();
