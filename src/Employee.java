@@ -45,7 +45,7 @@ public class Employee {
 
     public void setSalary(float salary) {
         if (salary < 50_000) {
-            System.out.println("Зарплата не может быть меньше 50_000 руб.");
+            throw new IllegalArgumentException("Зарплата не может быть меньше 50_000 руб.");
         }
         this.salary = salary;
     }
