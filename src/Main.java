@@ -10,7 +10,7 @@ public class Main {
         employeeBook[2] = employee3;
         Employee employee4 = new Employee("Евгеньева Евгения Евгеньевна", 4, 105_000);
         employeeBook[3] = employee4;
-        Employee employee5 = new Employee("Маратов Марат Маратович", 5, 115_000);
+        Employee employee5 = new Employee("Маратов Марат Маратович", 10, 115_000);
         employeeBook[4] = employee5;
 
         System.out.println("Задачи базовой сложности\n");

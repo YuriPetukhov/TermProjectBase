@@ -33,8 +33,8 @@ public class Employee {
     }
 
     public void setUnitNumber(int unitNumber) {
-        if (unitNumber > 1 && unitNumber < 5) {
-            System.out.println("Номер отдела должен находиться в интервале от 1 до 5");
+        if (unitNumber > 5 || unitNumber < 1) {
+            throw new IllegalArgumentException("Номер отдела должен находиться в интервале от 1 до 5");
         }
         this.unitNumber = unitNumber;
     }
